@@ -11,7 +11,7 @@ require('dotenv').config();
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  testDir: './tests',
+  // testDir: './tests',
 
   /* Run tests in files in parallel */
   fullyParallel: true,
@@ -70,7 +70,7 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'chromium', 
       use: { 
         ...devices['Desktop Chrome'],
         // viewport: { width: 1280, height: 720 },
@@ -78,7 +78,7 @@ export default defineConfig({
     },
 
     {
-      name: 'firefox',
+      name: 'firefox', 
       use: { ...devices['Desktop Firefox'] },
     },
 
